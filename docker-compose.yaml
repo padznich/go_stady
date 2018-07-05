@@ -1,0 +1,30 @@
+version: '2.0'
+services:
+
+  web:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./web/Dockerfile
+    ports:
+     - "8080:8080"
+    links:
+      - postgres:postgres
+    volumes:
+      - ./code/2_chat:/go/src/app
+    working_dir: /go/src/app
+    command: bash -c "export GOPATH=$PWD && go get -d -v -t && go build -o chat && ./chat"
+
+  postgres:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./postgres/Dockerfile
+    environment:
+      - POSTGRES_USER=chat_go
+      - POSTGRES_PASSWORD=chat_go
+      - POSTGRES_DB=chat_go
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/pgdata:/var/lib/postgresql/data/

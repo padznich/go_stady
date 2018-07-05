@@ -1,0 +1,12 @@
+ERROR 2018/07/04 20:03:29 utils.go:100: pq: relation "users" does not exist Cannot create user
+ERROR 2018/07/04 20:03:34 utils.go:100: pq: relation "users" does not exist Cannot find user
+ERROR 2018/07/04 20:03:42 utils.go:100: pq: relation "users" does not exist Cannot find user
+ERROR 2018/07/04 20:09:23 utils.go:100: pq: relation "users" does not exist Cannot create user
+ERROR 2018/07/04 20:09:28 utils.go:100: pq: relation "users" does not exist Cannot find user
+ERROR 2018/07/04 20:28:07 utils.go:100: pq: relation "users" does not exist Cannot create user
+ERROR 2018/07/04 20:28:11 utils.go:100: pq: relation "users" does not exist Cannot find user
+ERROR 2018/07/04 20:30:59 utils.go:100: pq: relation "users" does not exist Cannot create user
+ERROR 2018/07/04 20:31:25 utils.go:100: pq: relation "users" does not exist Cannot find user
+ERROR 2018/07/04 20:34:35 utils.go:100: pq: relation "users" does not exist Cannot create user
+ERROR 2018/07/05 08:53:44 utils.go:100: pq: relation "users" does not exist Cannot create user
+ERROR 2018/07/05 08:53:47 utils.go:100: pq: relation "users" does not exist Cannot find user

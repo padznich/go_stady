@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	host     = "asus-psql"
+	host     = "postgres"
 	port     = 5432
 	user     = "chat_go"
 	password = "chat_go"
